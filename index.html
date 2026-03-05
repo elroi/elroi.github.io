@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elroi | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio site for elroi.github.io — projects, skills, and contact information."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <span class="brand-title">Elroi</span>
+          <span class="brand-subtitle">elroi.github.io</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-kicker">Welcome to elroi.github.io</p>
+            <h1>Hi, I&apos;m Elroi.</h1>
+            <p class="hero-subtitle">
+              This is a clean, responsive starter for a personal portfolio — ready for your projects,
+              skills, and story.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p>
+            This is a placeholder about section for <strong>elroi.github.io</strong>. Replace this
+            text with a short introduction, your background, and what you&apos;re passionate about.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-intro">
+            Highlight the technologies and tools you&apos;re comfortable with. These badges are just
+            examples.
+          </p>
+          <div class="chip-list">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Git &amp; GitHub</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-intro">
+            Showcase a few key projects. Each card can link out to GitHub or a live demo.
+          </p>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-description">
+                Brief description of a featured project. Mention what it does and why it matters.
+              </p>
+              <p class="project-tech">Tech: HTML, CSS, JavaScript</p>
+              <div class="project-links">
+                <a href="#" aria-label="View Project One live demo" class="project-link">Live demo</a>
+                <a href="#" aria-label="View Project One source code" class="project-link">Source</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-description">
+                Another placeholder project card. Swap this content for your own work.
+              </p>
+              <p class="project-tech">Tech: React, TypeScript</p>
+              <div class="project-links">
+                <a href="#" aria-label="View Project Two live demo" class="project-link">Live demo</a>
+                <a href="#" aria-label="View Project Two source code" class="project-link">Source</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-description">
+                Use this space for experiments, learning projects, or anything you&apos;re proud of.
+              </p>
+              <p class="project-tech">Tech: Node.js, APIs</p>
+              <div class="project-links">
+                <a href="#" aria-label="View Project Three live demo" class="project-link">Live demo</a>
+                <a href="#" aria-label="View Project Three source code" class="project-link">Source</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-intro">
+            Ready to get in touch? You can email directly or adapt this simple form to connect
+            through your preferred workflow.
+          </p>
+          <p>
+            Email:
+            <a href="mailto:hello@elroi.github.io">hello@elroi.github.io</a>
+          </p>
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> elroi.github.io. All rights reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#" aria-label="GitHub profile link">GitHub</a>
+          <a href="#" aria-label="LinkedIn profile link">LinkedIn</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
