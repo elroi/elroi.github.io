@@ -133,6 +133,12 @@ main {
   color: var(--muted-text-color);
 }
 
+.brand-subtitle:hover,
+.brand-subtitle:focus-visible {
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+}
+
 .site-nav ul {
   list-style: none;
   margin: 0;
@@ -457,6 +463,17 @@ body.nav-open .site-nav {
 .footer-links a:hover {
   color: var(--accent-color);
   text-decoration: none;
+}
+
+.egg-badge {
+  display: none;
+  margin-left: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--accent-color);
+}
+
+body.egg-unlocked .egg-badge {
+  display: inline-block;
 }
 
 a:focus-visible,
